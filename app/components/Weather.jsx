@@ -1,9 +1,15 @@
 var React = require('react');
+var WeatherForm = require('WeatherForm');
+var WeatherMessage = require('WeatherMessage');
 
 var Weather = React.createClass({
 	render: function() {
 		return (
-			<p>Weather component</p>
+			<div>
+				<p>Weather component</p>
+				<WeatherForm/>
+				<WeatherMessage/>
+			</div>
 		)
 	}
 });
