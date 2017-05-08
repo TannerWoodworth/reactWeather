@@ -29254,8 +29254,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../../node_modules/css-loader/index.js!./app.css", function() {
-				var newContent = require("!!../../node_modules/css-loader/index.js!./app.css");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/index.js!./app.scss", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/index.js!./app.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -29273,7 +29273,7 @@
 
 
 	// module
-	exports.push([module.id, ".page-title {\n\tmargin-top: 50px;\n\tmargin-bottom: 50px;\n}\n\n.important {\n\tfont-weight: bold;\n\ttext-transform: capitalize;\n}\n\ninput[type=search] {\n\tbox-shadow: none;\n}", ""]);
+	exports.push([module.id, ".page-title {\n  margin-top: 50px;\n  margin-bottom: 50px; }\n\n.important {\n  font-weight: bold;\n  text-transform: capitalize; }\n\ninput[type=search] {\n  box-shadow: none; }\n", ""]);
 
 	// exports
 

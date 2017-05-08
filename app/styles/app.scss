@@ -1,0 +1,17 @@
+// This is a small project, don't hate me for keeping all of this in one file. Thanks <3
+
+$base-large: 50px;
+
+.page-title {
+	margin-top: $base-large;
+	margin-bottom: $base-large;
+}
+
+.important {
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+input[type=search] {
+	box-shadow: none;
+}
