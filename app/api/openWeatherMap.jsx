@@ -14,7 +14,8 @@ module.exports = {
 				return res.data.main.temp;
 			}
 		}, function(res) {
-			throw new Error(res.data.message);
+			// throw new Error(res.data.message);
+			throw new Error('Hmm, we can\'t seem to find the weather for that location. Sorry about that!');
 		})
 	}
 }
